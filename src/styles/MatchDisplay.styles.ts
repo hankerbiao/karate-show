@@ -97,13 +97,13 @@ export const StyledButton = styled(Button)`
 
 export const FoulDots = styled.div`
     display: flex;
-    gap: 5px;
+    gap: 20px;
     margin-top: 5px;
 `;
 
 export const FoulDot = styled.div`
-    width: 8px;
-    height: 8px;
-    background-color: red;
+    width: 20px;
+    height: 20px;
+    background-color: black;
     border-radius: 50%;
 `;
