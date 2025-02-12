@@ -1,4 +1,3 @@
-// src/pages/HomePage.tsx
 import React from 'react';
 import MatchDisplay from '../components/MatchDisplay';
 import { mockMatch } from '../constants/mockData';

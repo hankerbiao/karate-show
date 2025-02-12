@@ -4,6 +4,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import './index.css'
 import HomePage from "./pages/HomePage.tsx";
 import SettingPage from "./pages/SettingPage.tsx";
+import TestPage from "./pages/TestPage.tsx";
 
 
 const router = createBrowserRouter([
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
     {
         'path': '/settings',
         'element': <SettingPage
+        />
+    },
+    {
+        'path': '/test',
+        'element': <TestPage
         />
     }
 ])

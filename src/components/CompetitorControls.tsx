@@ -1,5 +1,5 @@
 import React from 'react';
-import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
+import {PlusOutlined, MinusOutlined} from '@ant-design/icons';
 import * as S from '../styles/MatchDisplay.styles';
 
 interface CompetitorControlsProps {

@@ -1,7 +1,12 @@
+import {Layout} from "antd";
+const { Content } = Layout;
+
 const MatchSetting = () => {
 
     return (
-        <div>Hello world</div>
+        <Layout style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Content>居中内容</Content>
+        </Layout>
     );
 };
 

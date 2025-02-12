@@ -5,7 +5,7 @@ import * as S from '../styles/MatchDisplay.styles';
 import { MAX_FOULS } from "../constants/mockData.ts";
 import Timer from "./Timer.tsx";
 import ScoreBoard from "./ScoreBoard.tsx";
-import CompetitorControls from "./CompetitorControls.tsx";  // 假设我们已经将 CompetitorControls 移到单独的文件中
+import CompetitorControls from "./CompetitorControls.tsx";
 
 const MatchDisplay: React.FC<{ match: Match }> = ({ match }) => {
     const [scores, setScores] = useState({ competitor1: 0, competitor2: 0 });

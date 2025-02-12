@@ -1,9 +1,9 @@
 // src/pages/SettingPage.tsx
-import React from 'react';
+import React from "react";
 import MatchSetting from "../components/MatchSetting.tsx";
 
 const SettingPage: React.FC = () => {
-    return <MatchSetting/>;
+  return <MatchSetting />;
 };
 
 export default SettingPage;
