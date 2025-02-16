@@ -64,7 +64,7 @@ const TimerDisplay: React.FC<{ timeLeft: number; isRunning: boolean }> = React.m
     return (
         <S.TimerDisplay>
             <S.TimerText>
-                <span style={{ color: isWarning ? 'red' : 'inherit' }}>{displayText}</span>
+                <span style={{ color: isWarning ? 'orange' : 'inherit' }}>{displayText}</span>
             </S.TimerText>
         </S.TimerDisplay>
     );

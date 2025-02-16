@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import { Modal } from 'antd';
 import { Match } from '../types';
 import * as S from '../styles/MatchDisplay.styles';
 import { MAX_FOULS } from "../constants/mockData.ts";
@@ -7,18 +6,16 @@ import Timer from "./Timer.tsx";
 import ScoreBoard from "./ScoreBoard.tsx";
 import CompetitorControls from "./CompetitorControls.tsx";
 
+
+
+
 const MatchDisplay: React.FC<{ match: Match }> = ({ match }) => {
     const [scores, setScores] = useState({ competitor1: 0, competitor2: 0 });
     const [fouls, setFouls] = useState({ competitor1: 0, competitor2: 0 });
 
     const resetMatch = useCallback(() => {
-        Modal.confirm({
-            title: '确定要重置比赛吗？',
-            onOk: () => {
-                setScores({ competitor1: 0, competitor2: 0 });
-                setFouls({ competitor1: 0, competitor2: 0 });
-            },
-        });
+        setScores({ competitor1: 0, competitor2: 0 });
+        setFouls({ competitor1: 0, competitor2: 0 });
     }, []);
 
     const handleScoreChange = useCallback((competitor: 'competitor1' | 'competitor2', change: number) => {
@@ -57,5 +54,6 @@ const MatchDisplay: React.FC<{ match: Match }> = ({ match }) => {
         </S.FullScreenContainer>
     );
 };
+
 
 export default React.memo(MatchDisplay);
